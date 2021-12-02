@@ -1,7 +1,5 @@
 
 ***START ANALYSIS***
-cap cd "C:\Users\mered\Dropbox\Family Leave\COVID Brief\Dataset and Code" /*change to github*/
-cap cd "C:\Users\mes2004\Dropbox\Family Leave\COVID Brief\Dataset and Code" /*change to github*/
 use CovidDataBrief.dta, clear
 
 
@@ -19,8 +17,6 @@ tab support3cat yyear, col m
 bysort fmla: tab support3cat yyear, col m
 
 *Table A2: Firm FE Regressions for Co-efficients and p-values
-
-cd "C:\Users\mered\Dropbox\Family Leave\Meredith_Workspace\Tables"
 
 eststo clear
 
@@ -61,8 +57,6 @@ drop if sup4==. |sup5==.
 
 *keep only year 5
 keep if yyear==5
-
-cd "C:\Users\mered\Dropbox\Family Leave\Meredith_Workspace\Tables"
 
 gen FFCRAxStatePolicy=FFCRA*statepol
 
